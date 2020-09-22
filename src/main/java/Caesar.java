@@ -9,11 +9,10 @@ public class Caesar {
         return output.toString();
     }
 
-    // doesn't work
     public static String decryptCaesar(String message) {
         StringBuilder output = new StringBuilder();
         for (char c : message.toCharArray()) {
-            output.append((char) ((c <= 'Z' && c >= 'A') ? ((c + 4) % 26) + 65 : (c <= 'z' && c >= 'a') ? ((c + 4) % 26) + 97 : c));
+            output.append((char) ((c <= 'Z' && c >= 'A') ? ((c + 10) % 26) + 65 : (c <= 'z' && c >= 'a') ? ((c + 4) % 26) + 97 : c));
         }
         return output.toString();
     }
