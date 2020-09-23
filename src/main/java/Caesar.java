@@ -36,7 +36,6 @@ public class Caesar {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-
         System.out.println("Would you like to \"encrypt\" or \"decrypt\" a message?");
         String command = scan.nextLine().trim().toLowerCase();
         System.out.println("Please enter your message to be " + command + "ed: ");
